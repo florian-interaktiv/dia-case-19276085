@@ -1,3 +1,33 @@
+## Setup
+- install node and npm
+- run `npm install`
+- for development use the `npm start` task
+- for buidling `npm build`
+
+## Lightning component
+```html
+<aura:component description="YourComponent" implements="flexipage:availableForAllPageTypes">
+  <lightning:container
+    src="{!$Resource.YourResource + '/index.html'}"
+  />
+</aura:component>
+```
+
+## Apex controller
+- create `TestController` with method `testMethod` remote action and string param `ping`.
+
+## Setup to salesforce
+- run `npm build`
+- zip the content of the build folder
+- upload zip file into static resource
+
+
+## Important
+  I used code from this [developerforce repository] https://github.com/developerforce/LightningContainerExamples/tree/master/ReactJS/Javascript/apex-controller
+
+
+-------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
